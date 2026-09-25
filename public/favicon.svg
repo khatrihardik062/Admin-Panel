@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" role="img" aria-labelledby="title desc">
+  <title id="title">PanelX metallic neon logo</title>
+  <desc id="desc">A polished PanelX wordmark with a blue-violet metallic neon emblem and dark glass backdrop.</desc>
+  <defs>
+    <linearGradient id="blueMetal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#66d9ff"/>
+      <stop offset="28%" stop-color="#1ea7ff"/>
+      <stop offset="58%" stop-color="#315bff"/>
+      <stop offset="82%" stop-color="#7657ff"/>
+      <stop offset="100%" stop-color="#a64cff"/>
+    </linearGradient>
+    <linearGradient id="whiteMetal" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="45%" stop-color="#e8edf8"/>
+      <stop offset="100%" stop-color="#aeb9cf"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#121a32" stop-opacity=".98"/>
+      <stop offset="50%" stop-color="#070d1d" stop-opacity=".94"/>
+      <stop offset="100%" stop-color="#10172b" stop-opacity=".98"/>
+    </linearGradient>
+    <filter id="glow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="18" result="blur"/>
+      <feColorMatrix in="blur" type="matrix"
+        values="0 0 0 0 0.16
+                0 0 0 0 0.38
+                0 0 0 0 1
+                0 0 0 .9 0"/>
+    </filter>
+    <filter id="softGlow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="7"/>
+    </filter>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="18" stdDeviation="24" flood-color="#000000" flood-opacity=".55"/>
+    </filter>
+    <clipPath id="cardClip">
+      <rect x="95" y="425" width="1010" height="350" rx="70"/>
+    </clipPath>
+  </defs>
+
+  <!-- Transparent canvas; dark card is part of the logo asset and can be removed if desired. -->
+  <g filter="url(#shadow)">
+    <rect x="95" y="425" width="1010" height="350" rx="70" fill="url(#glass)" stroke="#273250" stroke-width="2"/>
+    <rect x="96" y="426" width="1008" height="348" rx="69" fill="none" stroke="#6c7fb4" stroke-opacity=".16" stroke-width="2"/>
+  </g>
+
+  <!-- Neon aura -->
+  <g opacity=".58" filter="url(#glow)">
+    <path d="M185 575 L315 500 L420 560 L350 600 L315 580 L235 625 L235 665 L185 694 Z"
+          fill="#1d8dff"/>
+    <path d="M235 680 L315 635 L350 655 L235 720 Z" fill="#4265ff"/>
+    <path d="M350 600 L420 560 L450 578 L380 620 Z" fill="#8854ff"/>
+  </g>
+
+  <!-- PanelX emblem -->
+  <g>
+    <path d="M185 575 L315 500 L420 560 L350 600 L315 580 L235 625 L235 665 L185 694 Z"
+          fill="url(#blueMetal)"/>
+    <path d="M235 680 L315 635 L350 655 L235 720 Z" fill="url(#blueMetal)"/>
+    <path d="M350 600 L420 560 L450 578 L380 620 Z" fill="url(#blueMetal)"/>
+    <path d="M235 625 L315 580 L315 635 L235 680 Z" fill="#071126" opacity=".78"/>
+    <path d="M235 625 L315 580 L350 600 L270 645 Z" fill="#3aaeff" opacity=".55"/>
+  </g>
+
+  <!-- Wordmark -->
+  <g font-family="Inter, SF Pro Display, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+     font-size="164" font-weight="700" letter-spacing="-8">
+    <text x="465" y="648" fill="url(#whiteMetal)">Panel</text>
+    <text x="890" y="648" fill="url(#blueMetal)">X</text>
+  </g>
+
+  <!-- Subtle top reflection -->
+  <g clip-path="url(#cardClip)" opacity=".18">
+    <rect x="120" y="450" width="960" height="75" fill="#ffffff" transform="rotate(-2 600 487)"/>
+  </g>
+</svg>
