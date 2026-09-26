@@ -25,7 +25,7 @@ export default function RootLayout() {
         setIsSidebarOpen={setIsSidebarOpen}
       />
 
-      <main className={isSidebarOpen ? 'md:ml-82 md:mr-10' : ''}>
+      <main className={isSidebarOpen ? 'md:ml-72 md:mr-10' : ''}>
         <Outlet />
       </main>
 

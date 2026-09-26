@@ -41,13 +41,13 @@ export default function Header({ isSidebarOpen, setIsSidebarOpen }) {
   }, []);
 
   // Prevent background scrolling when sidebar is open on mobile
-  useEffect(() => {
-    if (isSidebarOpen) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "unset";
-    }
-  }, [isSidebarOpen]);
+  // useEffect(() => {
+  //   if (isSidebarOpen) {
+  //     document.body.style.overflow = "hidden";
+  //   } else {
+  //     document.body.style.overflow = "unset";
+  //   }
+  // }, [isSidebarOpen]);
 
   // Navigate and close drawer
   const handleNavigation = (path) => {

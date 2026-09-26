@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-export default function Add() {
+export default function AddSubCategory() {
   const [formData, setFormData] = useState({
     name: '',
     designation: 0,
@@ -36,10 +36,10 @@ export default function Add() {
 
   return (
     <div style={styles.page}>
-      <p style={styles.breadcrumb}>Home / Category / Add</p>
+      <p style={styles.breadcrumb}>Home / Sub Category / Add</p>
 
       <div style={styles.card}>
-        <h2 style={styles.heading}>Add Slider</h2>
+        <h2 style={styles.heading}>Add Sub Category</h2>
 
         <form onSubmit={handleSubmit}>
           <div style={styles.layout}>
@@ -76,7 +76,7 @@ export default function Add() {
             {/* Right Column: Text & Number Fields */}
             <div style={styles.rightCol}>
               <div style={styles.field}>
-                <label style={styles.label}>Name</label>
+                <label style={styles.label}>Category Name</label>
                 <input
                   type="text"
                   name="name"
@@ -88,9 +88,9 @@ export default function Add() {
               </div>
 
               <div style={styles.field}>
-                <label style={styles.label}>Designation</label>
+                <label style={styles.label}>Sub Category Name</label>
                 <input
-                  type="number"
+                  type="text"
                   name="designation"
                   value={formData.designation}
                   onChange={handleChange}
@@ -98,7 +98,7 @@ export default function Add() {
                 />
               </div>
 
-              <div style={styles.field}>
+              {/* <div style={styles.field}>
                 <label style={styles.label}>Rating</label>
                 <input
                   type="number"
@@ -107,7 +107,7 @@ export default function Add() {
                   onChange={handleChange}
                   style={styles.input}
                 />
-              </div>
+              </div> */}
 
               <div style={styles.field}>
                 <label style={styles.label}>Order</label>
@@ -120,7 +120,7 @@ export default function Add() {
                 />
               </div>
 
-              <div style={styles.field}>
+              {/* <div style={styles.field}>
                 <label style={styles.label}>Message</label>
                 <textarea
                   name="message"
@@ -129,7 +129,7 @@ export default function Add() {
                   onChange={handleChange}
                   style={styles.input}
                 />
-              </div>
+              </div> */}
             </div>
           </div>
 

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-export default function Add() {
+export default function AddCategory() {
   const [formData, setFormData] = useState({
     name: '',
     designation: 0,
@@ -39,7 +39,7 @@ export default function Add() {
       <p style={styles.breadcrumb}>Home / Category / Add</p>
 
       <div style={styles.card}>
-        <h2 style={styles.heading}>Add Slider</h2>
+        <h2 style={styles.heading}>Add Category</h2>
 
         <form onSubmit={handleSubmit}>
           <div style={styles.layout}>
@@ -88,7 +88,7 @@ export default function Add() {
               </div>
 
               <div style={styles.field}>
-                <label style={styles.label}>Designation</label>
+                <label style={styles.label}>Order</label>
                 <input
                   type="number"
                   name="designation"
@@ -98,7 +98,7 @@ export default function Add() {
                 />
               </div>
 
-              <div style={styles.field}>
+              {/* <div style={styles.field}>
                 <label style={styles.label}>Rating</label>
                 <input
                   type="number"
@@ -129,12 +129,12 @@ export default function Add() {
                   onChange={handleChange}
                   style={styles.input}
                 />
-              </div>
+              </div> */}
             </div>
           </div>
 
           <button type="submit" style={styles.button}>
-            Add Testimonial
+            Add Category
           </button>
         </form>
       </div>

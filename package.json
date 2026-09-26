@@ -14,6 +14,7 @@
     "izitoast": "^1.4.0",
     "lucide-react": "^1.47.0",
     "react": "^19.2.8",
+    "react-color": "^2.19.3",
     "react-dom": "^19.2.8",
     "react-helmet": "^6.1.0",
     "react-router": "^8.4.0",

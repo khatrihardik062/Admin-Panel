@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-export default function Add() {
+export default function AddMaterial() {
   const [formData, setFormData] = useState({
     name: '',
     designation: 0,
@@ -19,13 +19,13 @@ export default function Add() {
     });
   };
 
-  const handleImageChange = (e) => {
-    const file = e.target.files[0];
-    if (file) {
-      setImageFile(file);
-      setImagePreview(URL.createObjectURL(file));
-    }
-  };
+//   const handleImageChange = (e) => {
+//     const file = e.target.files[0];
+//     if (file) {
+//       setImageFile(file);
+//       setImagePreview(URL.createObjectURL(file));
+//     }
+//   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -36,19 +36,19 @@ export default function Add() {
 
   return (
     <div style={styles.page}>
-      <p style={styles.breadcrumb}>Home / Category / Add</p>
+      <p style={styles.breadcrumb}>Home / Material / Add</p>
 
       <div style={styles.card}>
-        <h2 style={styles.heading}>Add Slider</h2>
+        <h2 style={styles.heading}>Add Material</h2>
 
         <form onSubmit={handleSubmit}>
           <div style={styles.layout}>
             {/* Left Column: Image Box */}
-            <div style={styles.leftCol}>
+            {/* <div style={styles.leftCol}>
               <label style={styles.label}>Choose Image</label>
 
               {/* The whole box is a clickable label */}
-              <label style={styles.imageBox}>
+              {/* <label style={styles.imageBox}>
                 <input
                   type="file"
                   accept="image/*"
@@ -70,13 +70,13 @@ export default function Add() {
                     </div>
                   </div>
                 )}
-              </label>
-            </div>
+              </label> */}
+            {/* </div> */} 
 
             {/* Right Column: Text & Number Fields */}
             <div style={styles.rightCol}>
               <div style={styles.field}>
-                <label style={styles.label}>Name</label>
+                <label style={styles.label}>Title</label>
                 <input
                   type="text"
                   name="name"
@@ -87,7 +87,7 @@ export default function Add() {
                 />
               </div>
 
-              <div style={styles.field}>
+              {/* <div style={styles.field}>
                 <label style={styles.label}>Designation</label>
                 <input
                   type="number"
@@ -96,9 +96,9 @@ export default function Add() {
                   onChange={handleChange}
                   style={styles.input}
                 />
-              </div>
+              </div> */}
 
-              <div style={styles.field}>
+              {/* <div style={styles.field}>
                 <label style={styles.label}>Rating</label>
                 <input
                   type="number"
@@ -107,7 +107,7 @@ export default function Add() {
                   onChange={handleChange}
                   style={styles.input}
                 />
-              </div>
+              </div> */}
 
               <div style={styles.field}>
                 <label style={styles.label}>Order</label>
@@ -120,7 +120,7 @@ export default function Add() {
                 />
               </div>
 
-              <div style={styles.field}>
+              {/* <div style={styles.field}>
                 <label style={styles.label}>Message</label>
                 <textarea
                   name="message"
@@ -129,12 +129,12 @@ export default function Add() {
                   onChange={handleChange}
                   style={styles.input}
                 />
-              </div>
+              </div> */}
             </div>
           </div>
 
           <button type="submit" style={styles.button}>
-            Add Testimonial
+            Add Choose
           </button>
         </form>
       </div>

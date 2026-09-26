@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-export default function Add() {
+export default function AddChoose() {
   const [formData, setFormData] = useState({
     name: '',
     designation: 0,
@@ -36,10 +36,10 @@ export default function Add() {
 
   return (
     <div style={styles.page}>
-      <p style={styles.breadcrumb}>Home / Category / Add</p>
+      <p style={styles.breadcrumb}>Home / Why Choose Us / Add</p>
 
       <div style={styles.card}>
-        <h2 style={styles.heading}>Add Slider</h2>
+        <h2 style={styles.heading}>Add Why Choose Us</h2>
 
         <form onSubmit={handleSubmit}>
           <div style={styles.layout}>
@@ -76,7 +76,7 @@ export default function Add() {
             {/* Right Column: Text & Number Fields */}
             <div style={styles.rightCol}>
               <div style={styles.field}>
-                <label style={styles.label}>Name</label>
+                <label style={styles.label}>Title</label>
                 <input
                   type="text"
                   name="name"
@@ -87,7 +87,7 @@ export default function Add() {
                 />
               </div>
 
-              <div style={styles.field}>
+              {/* <div style={styles.field}>
                 <label style={styles.label}>Designation</label>
                 <input
                   type="number"
@@ -96,9 +96,9 @@ export default function Add() {
                   onChange={handleChange}
                   style={styles.input}
                 />
-              </div>
+              </div> */}
 
-              <div style={styles.field}>
+              {/* <div style={styles.field}>
                 <label style={styles.label}>Rating</label>
                 <input
                   type="number"
@@ -107,7 +107,7 @@ export default function Add() {
                   onChange={handleChange}
                   style={styles.input}
                 />
-              </div>
+              </div> */}
 
               <div style={styles.field}>
                 <label style={styles.label}>Order</label>
@@ -134,7 +134,7 @@ export default function Add() {
           </div>
 
           <button type="submit" style={styles.button}>
-            Add Testimonial
+            Add Choose
           </button>
         </form>
       </div>
